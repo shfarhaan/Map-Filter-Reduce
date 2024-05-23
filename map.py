@@ -8,13 +8,14 @@ students = [Student("Joe", 0.48), Student("Amy", 0.78), Student("Penny", 0.88), 
 
 
 student_results = []
-for student in students:
+# for student in students:
     # if student.score >= 0.7:
     #     student_results.append(f"{student.name} Passed")
     # else:
     #     student_results.append(f"{student.name} Failed")
         
-    student_results.append(f"{student.name} Passed") if student.score >= 0.7 else student_results.append(f"{student.name} Failed")
+    # student_results.append(f"{student.name} Passed") if student.score >= 0.7 else student_results.append(f"{student.name} Failed")
 
+map_results = list(map(lambda student: student.name, students))
 
-print(student_results)
+print(map_results)
