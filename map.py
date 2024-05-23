@@ -16,6 +16,6 @@ student_results = []
         
     # student_results.append(f"{student.name} Passed") if student.score >= 0.7 else student_results.append(f"{student.name} Failed")
 
-map_results = list(map(lambda student: student.name, students))
+map_results = list(map(lambda student: f"{student.name} Passed" if student.score >= 0.7 else f"{student.name} Failed", students))
 
 print(map_results)
